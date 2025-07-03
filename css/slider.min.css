@@ -1,0 +1,66 @@
+.slide {
+    position: var(--positon-relative);
+    display: var(--display-flex);
+    align-items: var(--align-item-center);
+    justify-content: var(--justify-content-center);
+}
+.dakhoa__slide-show {
+    width: var(--width-100);
+    overflow: hidden;
+    position: var(--positon-relative);
+    box-shadow: 0px 4px 4px 0px #00000033;
+}
+.dakhoa__slide-show-image {
+    display: var(--display-flex);
+    transition: 1s;
+    height: 100%;
+    width: var(--width-100);
+}
+
+.btn:hover {
+    color: var(--color-white);
+}
+.btn {
+    font-size: 40px;
+    position: var(--positon-absolute);
+    top: 50%;
+    color: var(--color-999);
+    transform: translateY(-50%);
+    transition: 1s;
+}
+.btn-left {
+    left: 0;
+    font-size: 40px;
+}
+.btn-right {
+    right: 0;
+}
+.index-images {
+    position: var(--positon-absolute);
+    bottom: 10px;
+    display: var(--display-flex);
+    align-items: var(--align-item-center);
+    justify-content: var(--justify-content-center);
+    left: 50%;
+    transform: translate(-50%);
+}
+.index-item {
+    background-color: #6cc9e3;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    border-radius: 50%;
+}
+.index-item-f {
+    background-color: #6cc9e3;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    border-radius: 50%;
+}
+.active {
+    background-color: #3e97fe;
+    height: 18px;
+    width: 18px;
+}
+
