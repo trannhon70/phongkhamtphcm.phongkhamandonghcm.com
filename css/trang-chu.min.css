@@ -144,7 +144,7 @@
 }
 
 .motto__container-left-top-title{
-    background: linear-gradient(90deg, var(--background-color-1F99D5) 50.5%, #006B9F 100%);
+    background: linear-gradient(90deg, var(--background-color-1F99D5) 50.5%, #007156 100%);
     width: 100%;
     height: 40px;
     color: var(--color-white);
@@ -212,7 +212,7 @@
 }
 
 .advantage__container-right-top-title{
-    background: linear-gradient(90deg, var(--background-color-1F99D5) 50.5%, #006B9F 100%);
+    background: linear-gradient(90deg, var(--background-color-1F99D5) 50.5%, #007156 100%);
     width: 100%;
     height: 40px;
     color: var(--color-white);
@@ -377,7 +377,7 @@
     max-width: var(--container);
     margin: var(--margin-auto);
     width: var(--width-100);
-    background: linear-gradient(90deg, #1F99D5 50%, #006B9F 100%);
+    background: linear-gradient(90deg, #007156 50%, #13b084 100%);
    
     height: 50px;
    
@@ -450,7 +450,7 @@
 
 .client__container-title{
     width: 560px;
-    background: linear-gradient(90deg, #1F99D5 50%, #006B9F 100%);
+    background: linear-gradient(90deg, #007156 50%, #13b084 100%);
     height: 50px;
     margin: var(--margin-auto);
     display: var(--display-flex);

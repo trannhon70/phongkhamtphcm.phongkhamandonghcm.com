@@ -474,11 +474,11 @@
 
 .article__container-form-button>button:hover{
     transition: .5s;
-    background: linear-gradient(90deg, #1F99D5 0%, #006B9F 100%);
+    background: linear-gradient(90deg, #13b084 0%, #007156 100%);
 }
 
 .article__container-right-title{
-    background: linear-gradient(90deg, #1F99D5 50.5%, #006B9F 100%);
+    background: linear-gradient(90deg, #13b084 50.5%, #007156 100%);
     font-size: var(--font-size-18);
     color: var(--color-white);
     font-weight: var(--font-weight-700);
