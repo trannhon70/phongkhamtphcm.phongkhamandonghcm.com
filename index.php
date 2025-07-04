@@ -28,7 +28,7 @@
                         <div class="motto__container-left-boddy" >
                         <div class="motto__container-left-text">
                           
-                            Phòng khám Chuyên khoa An Đông là cơ sở y tế uy tín tại TP.HCM. Cung cấp dịch vụ y tế chất lượng và tận tâm. Phòng khám chuyên về các chuyên khoa: nội khoa, ngoại khoa, da liễu, và hậu môn trực tràng, với đội ngũ y bác sĩ giàu kinh nghiệm, luôn sẵn sàng chăm sóc và hỗ trợ điều trị cho người bệnh.
+                            Phòng khám Chuyên khoa An Đông là cơ sở y tế uy tín tại TP.HCM. Cung cấp dịch vụ y tế chất lượng và tận tâm. Phòng khám với nhiều chuyên khoa, với đội ngũ y bác sĩ giàu kinh nghiệm, luôn sẵn sàng chăm sóc và hỗ trợ điều trị cho người bệnh.
                         </div>
                         </div>
                     </div>
@@ -135,29 +135,27 @@
                                 <hr>
                             </div>
                             <div class="client__container-item-text">
-                                “Mình bị viêm da cũng khá nặng, đã chữa trị nhiều nơi nhưng không khỏi. Mình biết đến Phòng khám Chuyên khoa An Đông qua một người bạn. Khi mình đến khám, bác sĩ và nhân viên phòng khám hướng dẫn mình rất chi tiết trong từng hạng mục.”
+                                 “Tôi rất hài lòng với dịch vụ tại phòng khám. Các bác sĩ rất tận tình, giải thích rõ ràng về bệnh tình và phương pháp điều trị. Không gian khám bệnh sạch sẽ, thoải mái, giúp tôi cảm thấy yên tâm hơn.”
                             </div>
                         </div>
                         <div class="client__container-item activeClient">
                             <amp-img class="client__container-item-img" src="<?php echo $local ?>/images/users/user_trunghieu.webp" height="100px" width="100px" alt="..."></amp-img>
-                            <div class="client__container-item-name">ANH TRUNG HIÊU</div>
+                            <div class="client__container-item-name">ANH TRUNG HIẾU</div>
                             <div class="client__container-item-div">
                                 <hr>
                             </div>
                             <div class="client__container-item-text">
-                                “Công việc của Hiếu khá bận nên thời gian rảnh rất ít. Do đó Hiếu đã chọn thăm khám nam khoa tại Chuyên khoa An Đông qua Đặt hẹn Online. Đội ngũ nhân viên phòng khám rất dễ thương, thân thiện và nhẹ nhàng trong tiếp đón. Các Y – Bác ai cũng nhiệt tình, chu đáo và tận tâm. Hiếu cảm thấy rất may mắn và hài lòng khi mình đã tin chọn phòng khám Chuyên khoa An Đông.”
+                                  “Tuần trước mình có đến đây cắt bao quy đầu. Các bác sĩ tư vấn rất nhiệt tình, có tâm, tay nghề giỏi, làm rất êm và kỹ lưỡng, mình thấy giá cũng hợp lý. Bên đây cũng có khám sức khỏe định kỳ nữa nên tháng sau mình sẽ đưa gia đình đến khám.”
                             </div>
                         </div>
                         <div class="client__container-item ">
                             <amp-img class="client__container-item-img" src="<?php echo $local ?>/images/users/user_minhHai.webp" height="100px" width="100px" alt="..."></amp-img>
-                            <div class="client__container-item-name">ANH TRUNG HIÊU</div>
+                            <div class="client__container-item-name">ANH ĐỨC TÀI</div>
                             <div class="client__container-item-div">
                                 <hr>
                             </div>
                             <div class="client__container-item-text">
-                                “Hải mới có chuyến công tác ở Sài Gòn nên tranh thủ cùng bạn đi làm xét nghiệm Bệnh xã hội tại Phòng khám Chuyên khoa An Đông.
-                                Theo Hải thì chất lượng phòng khám là khỏi chê, đội ngũ nhân viên y, bác sĩ rất thân thiện và nhiệt tình. Thời gian trả kết quả cũng rất nhanh, cái chính là an toàn và bảo mật.
-                                Đây là điều mà Hải cảm thấy hài lòng nhất, xin cám ơn Chuyên khoa An Đông!”
+                                “Mình được bạn bè giới thiệu đến Chuyên khoa An Đông. Tại đây, các bác sĩ vô cùng có tâm với nghề, nên mình cũng thoải mái chia sẻ những vấn đề mình đang gặp phải. Sau điều trị, mình cảm thấy sức khỏe cải thiện hơn”
                             </div>
                         </div>
                     </div>

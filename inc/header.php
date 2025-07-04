@@ -7,7 +7,8 @@ Session::init();
 // Danh sách IP bị chặn
 $blocked_ips = ['115.78.128.131'];
 
-function getClientIp() {
+function getClientIp()
+{
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
         return $_SERVER['HTTP_CLIENT_IP'];
     } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
@@ -28,29 +29,29 @@ if (in_array($client_ip, $blocked_ips)) {
 
 
 <?php
-    include_once 'classes/bai_viet.php';
-    include_once 'classes/benh.php';
+include_once 'classes/bai_viet.php';
+include_once 'classes/benh.php';
 
-    spl_autoload_register(function ($className) {
-        include_once "classes/" . $className . ".php";
-    });
-    $dbReadStarTime = hrtime(true);
+spl_autoload_register(function ($className) {
+    include_once "classes/" . $className . ".php";
+});
+$dbReadStarTime = hrtime(true);
 
-    $bai_viet = new post();
-    $benh = new Benh();
+$bai_viet = new post();
+$benh = new Benh();
 
-    $dbReadEndTime = hrtime(true);
-    $dbReadTotalTime = ($dbReadEndTime - $dbReadStarTime) / 1e+6;
+$dbReadEndTime = hrtime(true);
+$dbReadTotalTime = ($dbReadEndTime - $dbReadStarTime) / 1e+6;
 ?>
 
 <?php
- header("Timing-Allow-Origin: *");
- header("Cache-Control: public, max-age=31536000");
- header("Cache-Control: private, no-cache");
- header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
+header("Timing-Allow-Origin: *");
+header("Cache-Control: public, max-age=31536000");
+header("Cache-Control: private, no-cache");
+header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-$local = 'http://localhost/phongkhamtphcm.phongkhamandonghcm.com';
-// $local = 'https://phongkhamtphcm.phongkhamandonghcm.com';
+// $local = 'http://localhost/phongkhamtphcm.phongkhamandonghcm.com';
+$local = 'https://phongkhamtphcm.phongkhamandonghcm.com';
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +65,7 @@ $local = 'http://localhost/phongkhamtphcm.phongkhamandonghcm.com';
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
     <link rel="preload" href="<?php echo $local ?>/css/index.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
     <link rel="preload" href="css/toastr.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
-    
+
 
     <style amp-boilerplate>
         body {
@@ -147,8 +148,7 @@ $local = 'http://localhost/phongkhamtphcm.phongkhamandonghcm.com';
 
                 // Thêm stylesheet mới dựa trên kích thước cửa sổ
                 if (window.innerWidth < 1000) {
-                    const mobileLink = [
-                        {
+                    const mobileLink = [{
                             href: 'css/header_mobile.min.css',
                             id: 'mobile-0'
                         },
@@ -170,8 +170,7 @@ $local = 'http://localhost/phongkhamtphcm.phongkhamandonghcm.com';
                     });
 
                 } else {
-                    const desktopLink = [
-                        {
+                    const desktopLink = [{
                             href: 'css/header.min.css',
                             id: 'desktop-0'
                         },
@@ -200,24 +199,42 @@ $local = 'http://localhost/phongkhamtphcm.phongkhamandonghcm.com';
 
             updateHeaderStylesheet();
 
-          
 
-            
+
+
             window.addEventListener('resize', () => {
                 console.log('Window resized to:', window.innerWidth);
                 updateHeaderStylesheet();
-              
+
             });
         });
     </script>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-68K71TYX1K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+        // Chỉ tải Google Analytics khi người dùng cuộn xuống
+        document.addEventListener('scroll', function loadGA() {
+            console.log('Người dùng cuộn xuống - Tải Google Analytics');
 
-  gtag('config', 'G-68K71TYX1K');
-</script>
+            // Tạo thẻ script
+            var g = document.createElement('script'),
+                s = document.scripts[0];
+            g.src = 'https://www.googletagmanager.com/gtag/js?id=G-68K71TYX1K';
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
 
+            // Cấu hình gtag
+            g.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-68K71TYX1K');
+            };
+
+            // Xóa sự kiện lắng nghe để không tải lại
+            document.removeEventListener('scroll', loadGA);
+        });
+    </script>

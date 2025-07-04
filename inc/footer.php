@@ -53,13 +53,13 @@
                             <div>360 An Dương Vương, P.4, Q.5, TP.HCM</div>
                         </div>
                     </div>
-                    <div class="footer__container-left-body-div-item">
+                    <!-- <div class="footer__container-left-body-div-item">
                         <span class="footer__container-left-body-div-item-add">+</span>
                         <div class="footer__container-left-body-div-item-line">
                             <h5>Mail: </h5>
                             <div>pkdkad360@gmail.com</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -171,13 +171,13 @@
                             <div>360 An Dương Vương, P.4, Q.5, TP.HCM</div>
                         </div>
                     </div>
-                    <div class="footer__container-left-body-div-item">
+                    <!-- <div class="footer__container-left-body-div-item">
                         <span class="footer__container-left-body-div-item-add">+</span>
                         <div class="footer__container-left-body-div-item-line">
                             <h5>Mail: </h5>
                             <div>pkdkad360@gmail.com</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         <div>
