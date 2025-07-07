@@ -1,140 +1,176 @@
 <?php
-	include '../classes/user.php';
-    Session::checkLogin();
+include '../classes/user.php';
+Session::checkLogin();
 ?>
 <?php
 $class = new users();
-	if($_SERVER['REQUEST_METHOD'] === 'POST'){
-		$user_name = $_POST['user_name'];
-		$password = md5($_POST['password']);
-		$login_check = $class->login_user($user_name,$password) ;
-	}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $user_name = $_POST['user_name'];
+    $password = md5($_POST['password']);
+    $login_check = $class->login_user($user_name, $password);
+}
 ?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <style>
-        /* Coded with love by Mutiullah Samim */
-        body, html {
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+        * {
             margin: 0;
             padding: 0;
-            height: 100%;
-            background: #60a3bc !important;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
         }
-        .user_card {
-            height: 400px;
-            width: 350px;
-            margin-top: auto;
-            margin-bottom: auto;
-            background: #f39c12;
-            position: relative;
+
+        body {
             display: flex;
+            align-items: center;
             justify-content: center;
-            flex-direction: column;
-            padding: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            border-radius: 5px;
+            height: 100vh;
+            padding: 15px;
+            background: #1abc9c;
+            overflow: hidden;
         }
-        .brand_logo_container {
-            position: absolute;
-            height: 170px;
-            width: 170px;
-            top: -75px;
-            border-radius: 50%;
-            background: #60a3bc;
-            padding: 10px;
-            text-align: center;
-        }
-        .brand_logo {
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-            border: 2px solid white;
-        }
-        .form_container {
-            margin-top: 100px;
-        }
-        .login_btn {
+
+        .wrapper {
+            max-width: 500px;
             width: 100%;
-            background: #c0392b !important;
-            color: white !important;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
         }
-        .login_btn:focus {
-            box-shadow: none !important;
-            outline: 0px !important;
+
+        .wrapper .title {
+            height: 120px;
+            background: #16a085;
+            border-radius: 5px 5px 0 0;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .login_container {
-            padding: 0 2rem;
+
+        .wrapper form {
+            padding: 25px 35px;
         }
-        .input-group-text {
-            background: #c0392b !important;
-            color: white !important;
-            border: 0 !important;
-            border-radius: 0.25rem 0 0 0.25rem !important;
+
+        .wrapper form .row {
+            height: 60px;
+            margin-top: 15px;
+            position: relative;
         }
-        .input_user, .input_pass:focus {
-            box-shadow: none !important;
-            outline: 0px !important;
+
+        .wrapper form .row input {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            padding-left: 70px;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            font-size: 18px;
+            transition: all 0.3s ease;
         }
-        .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-            background-color: #c0392b !important;
+
+        form .row input:focus {
+            border-color: #16a085;
+        }
+
+        form .row input::placeholder {
+            color: #999;
+        }
+
+        .wrapper form .row i {
+            position: absolute;
+            width: 55px;
+            height: 100%;
+            color: #fff;
+            font-size: 22px;
+            background: #16a085;
+            border: 1px solid #16a085;
+            border-radius: 5px 0 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper form .pass {
+            margin-top: 12px;
+        }
+
+        .wrapper form .pass a {
+            color: #16a085;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .wrapper form .pass a:hover {
+            text-decoration: underline;
+        }
+
+        .wrapper form .button input {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 0px;
+            background: #16a085;
+            border: 1px solid #16a085;
+            cursor: pointer;
+        }
+
+        form .button input:hover {
+            background: #12876f;
+        }
+
+        .wrapper form .signup-link {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 17px;
+        }
+
+        .wrapper form .signup-link a {
+            color: #16a085;
+            text-decoration: none;
+        }
+
+        form .signup-link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <div class="container h-100">
-        <div class="d-flex justify-content-center h-100">
-            <div class="user_card">
-                <div class="d-flex justify-content-center">
-                    <div class="brand_logo_container">
-                        <img src="https://cdn.freebiesupply.com/logos/large/2x/pinterest-circle-logo-png-transparent.png" class="brand_logo" alt="Logo">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center form_container">
-                    <form method="POST" action="login.php">
-                    <span style="color:red;" ><?php 
-				if(isset($login_check)){
-					echo $login_check;
-				}
-			?></span>
-                        <div class="input-group mb-3">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" name="user_name" class="form-control input_user" placeholder="username" required>
-                        </div>
-                        <div class="input-group mb-2">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="password" name="password" class="form-control input_pass" placeholder="password" required>
-                        </div>
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customControlInline">
-                                <label class="custom-control-label" for="customControlInline">Remember me</label>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="submit" name="button" class="btn login_btn">Login</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="mt-4">
-                    <div class="d-flex justify-content-center links">
-                        Don't have an account? <a href="#" class="ml-2">Sign Up</a>
-                    </div>
-                    <div class="d-flex justify-content-center links">
-                        <a href="#">Forgot your password?</a>
-                    </div>
-                </div>
+    <div class="wrapper">
+        <div class="title"><span>Login Form</span></div>
+        <form method="POST" action="login.php">
+            <span style="color:red;"><?php
+                                        if (isset($login_check)) {
+                                            echo $login_check;
+                                        }
+                                        ?></span>
+            <div class="row">
+                <i class="fas fa-user"></i>
+                <input name="user_name" type="text" placeholder="Tài khonar" required />
             </div>
-        </div>
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Mật khẩu" required />
+            </div>
+            <div class="pass"><a href="#">Forgot password?</a></div>
+            <div class="row button">
+                <input type="submit" value="Login" />
+            </div>
+            <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+        </form>
     </div>
+
 </body>
+
 </html>
