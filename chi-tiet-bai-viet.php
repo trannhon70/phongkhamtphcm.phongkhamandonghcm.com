@@ -21,7 +21,10 @@ if (isset($postDetail) && isset($postDetail['name_khoa'])) {
     }
 }
 
-// var_dump($getPostDetail);
+if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
+    header("Location: /404.html");
+    exit();
+}
 ?>
 
 <body>

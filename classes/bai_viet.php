@@ -75,7 +75,7 @@ class post
     $slug .= '-' . ($latest_id);
 
     // Thực hiện truy vấn nếu các trường không rỗng
-    if ($tieu_de !== '' && $id_khoa !=='' && $content !== '' && $title !== '' && $keyword !=='' && $description !=='' && $id_benh !=='' ) {
+    if ($tieu_de !== '' && $id_khoa !== '' && $content !== '' && $title !== '' && $keyword !== '' && $description !== '' && $id_benh !== '') {
       $query = "INSERT INTO admin_baiviet (title, slug, content, id_benh, id_khoa, created_at, tieu_de, keyword, descriptions, user_id, img,view)
                   VALUES ('$title', '$slug', '$content', '$id_benh', '$id_khoa', '$created_at', '$tieu_de', '$keyword', '$description', '" . Session::get('id') . "', '$img','0')";
       $result = $this->db->insert($query);
@@ -128,7 +128,7 @@ class post
     return $result;
   }
 
-  public function getTotalCount($tieuDe,$IdBenh)
+  public function getTotalCount($tieuDe, $IdBenh)
   {
     $tieuDe = mysqli_real_escape_string($this->db->link, $tieuDe);
     if ($tieuDe !== '' || $IdBenh !== '') {
@@ -229,12 +229,13 @@ class post
   }
 
 
-  public function getBaiVietDauTienByBenh ($slug_benh){
-   
+  public function getBaiVietDauTienByBenh($slug_benh)
+  {
+
     $slug_benh = mysqli_real_escape_string($this->db->link, $slug_benh);
     $querybenh = "SELECT * FROM admin_benh WHERE slug = '$slug_benh' LIMIT 1 ";
     $resultBenh = $this->db->select($querybenh);
-    if($resultBenh){
+    if ($resultBenh) {
       $benh = $resultBenh->fetch_assoc();
       $id = $benh['id'];
       $query = "SELECT baiviet.*, 
@@ -252,6 +253,19 @@ class post
         return 'Hiện tại dữ liệu này chưa có bài viết!';
       }
     }
+  }
+
+  public function updateHiden($data)
+  {
    
+    $id = mysqli_real_escape_string($this->db->link, $data['id']);
+    $hiden = mysqli_real_escape_string($this->db->link, $data['hiden']);
+    $query = "UPDATE admin_baiviet SET hiden = '$hiden' WHERE id = '$id'";
+    $result = $this->db->update($query);
+    if ($result) {
+      return array('status' => 'success', 'message' => 'Cập nhật bài viết thành công!');
+    } else {
+      return array('status' => 'error', 'message' => 'Cập nhật bài viết thất bại!');
+    }
   }
 }
