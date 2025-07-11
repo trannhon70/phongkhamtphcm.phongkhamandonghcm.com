@@ -1,7 +1,15 @@
 RewriteEngine On
 
-# Rewrite for trang-chu.html
+# Nếu file hoặc thư mục tồn tại thì không rewrite
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ❗ Bỏ qua rewrite cho 404.html
+RewriteRule ^404\.html$ - [L]
+
+# Các trang đặc biệt
 RewriteRule ^trang-chu\.html$ index.php [L]
 RewriteRule ^home\.html$ home.php [L]
 
+# Slug bài viết
 RewriteRule ^([a-zA-Z0-9_-]+)\.html$ chi-tiet-bai-viet.php?slug=$1 [L]

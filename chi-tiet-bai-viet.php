@@ -22,7 +22,8 @@ if (isset($postDetail) && isset($postDetail['name_khoa'])) {
 }
 
 if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
-    header("Location: /404.html");
+    http_response_code(404);
+    include '404.html'; // hoặc '404.php'
     exit();
 }
 ?>
