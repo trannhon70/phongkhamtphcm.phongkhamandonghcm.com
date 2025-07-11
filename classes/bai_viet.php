@@ -76,8 +76,8 @@ class post
 
     // Thực hiện truy vấn nếu các trường không rỗng
     if ($tieu_de !== '' && $id_khoa !== '' && $content !== '' && $title !== '' && $keyword !== '' && $description !== '' && $id_benh !== '') {
-      $query = "INSERT INTO admin_baiviet (title, slug, content, id_benh, id_khoa, created_at, tieu_de, keyword, descriptions, user_id, img,view)
-                  VALUES ('$title', '$slug', '$content', '$id_benh', '$id_khoa', '$created_at', '$tieu_de', '$keyword', '$description', '" . Session::get('id') . "', '$img','0')";
+      $query = "INSERT INTO admin_baiviet (title, slug, content, id_benh, id_khoa, created_at, tieu_de, keyword, descriptions, user_id, img,view, hiden)
+                  VALUES ('$title', '$slug', '$content', '$id_benh', '$id_khoa', '$created_at', '$tieu_de', '$keyword', '$description', '" . Session::get('id') . "', '$img','0','0')";
       $result = $this->db->insert($query);
 
       return $result
