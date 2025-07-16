@@ -198,11 +198,11 @@
 </footer>
 
 <div class="footer_list_icon">
-    <div>
+    <!-- <div>
         <div class="footer_icon_happy" id="openModalKM" >
             <amp-img src="<?php echo $local ?>/images/icons/icon_happy.gif" height="50px" width="50px" alt="..."></amp-img>
         </div>
-    </div>
+    </div> -->
     
     <div style="margin-top:20px">
         <a class="footer_icon_mess" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" ><amp-img style="margin-left:3px" src="<?php echo $local ?>/images/icons/icon_message.webp" height="45px" width="45px" alt="..."></amp-img>
