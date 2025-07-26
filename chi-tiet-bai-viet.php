@@ -86,9 +86,32 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                             <?php echo $getPostDetail['tieu_de'] ?>
                         </div>
                         <div class="article__container-right-banner">
-                            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
+                            <!-- <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
                                 <img width="100%"  src="<?php echo $local ?>/images/banner/khuyen_mai_mobile.gif" alt="...">
-                            </a>
+                            </a> -->
+                           <section class="cardbs">
+                                <div class="cardbs__body">
+                                    <div class="cardbs__body-left">
+                                        <img loading="lazy" width="100%" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp" alt="...">
+                                    </div>
+                                    <div class="cardbs__body-right">
+                                        <div class="cardbs__body-right-bs">
+                                            BS VÕ MINH NGUYỄN
+                                        </div>
+                                        <div class="cardbs__body-right-ck">
+                                            Chuyên khoa ngoại
+                                        </div>
+                                        <div class="cardbs__body-right-ct">
+                                            Từng công tác tại Bệnh viện Chuyên khoa Sainpaul Hà Nội <a href="#bs">xem thêm...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="banner">
+                                <div class="banner__button">
+                                    <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">tư vấn với bác sĩ tại đây</a>
+                                </div>
+                            </section>
                         </div>
                         
                         <div class="article__container-right-content" id="bai-viet">

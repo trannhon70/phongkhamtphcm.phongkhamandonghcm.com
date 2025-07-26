@@ -186,12 +186,13 @@
     </div>
     <div class="footer__mobile-position" >
         <div class="footer__mobile-position-div" >
-            <a class="footer__mobile-position-div-left" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
+            <a class="footer__mobile-position-div-left" href="tel:02877779888"  >
                 <div style="position: relative;" >
                     <div class="footer_list_icon_number1">10</div>
                 </div>
+                <img  loading="lazy" width="30px" height="30px" src="<?php echo $local ?>/images/icons/icon_call.png" alt="...">
             </a>
-            <a class="footer__mobile-position-div-center" href="tel:02877779888"></a>
+            <!-- <a class="footer__mobile-position-div-center" href="tel:02877779888"></a> -->
             <a class="footer__mobile-position-div-right" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" ></a>
         </div>
     </div>
@@ -203,7 +204,11 @@
             <amp-img src="<?php echo $local ?>/images/icons/icon_happy.gif" height="50px" width="50px" alt="..."></amp-img>
         </div>
     </div> -->
-    
+    <div style="z-index: 1000;" >
+        <a class="footer_icon_happy" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+            <img loading="lazy" src="<?php echo $local ?>/images/icons/icon_zalo.webp" height="50px" width="50px" alt="..."></img>
+        </a>
+    </div>
     <div style="margin-top:20px">
         <a class="footer_icon_mess" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" ><amp-img style="margin-left:3px" src="<?php echo $local ?>/images/icons/icon_message.webp" height="45px" width="45px" alt="..."></amp-img>
             <div class="ping"></div>

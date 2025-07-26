@@ -624,3 +624,121 @@
 .article__container-left-div {
     width: 100%; /* Adjust as needed to fit design */
 }
+
+.cardbs{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.cardbs__body{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
+    border-top: 1px solid #eee;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+  .cardbs__body-left{
+    width: 30%;
+  }
+
+  .cardbs__body-left > img {
+    border: 1px solid #999;
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  .cardbs__body-right{
+    width: 70%;
+  }
+
+  .cardbs__body-right-bs{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .cardbs__body-right-ck{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 7px;
+  }
+
+  .cardbs__body-right-ct{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 7px;
+    line-height: 20px;
+  }
+
+  .banner > img{
+    width: 100%;
+    height: auto;
+}
+
+.banner__button{
+    display: var(--display-flex);
+    align-items: var(--align-item-center);
+    justify-content: var(--justify-content-center);
+    margin: 10px 0px;
+}
+
+.box {
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: var(--font-size-18);
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+    border: solid 5px transparent;
+    border-radius: 2em;
+    --gradient-border: conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      #08f,
+      #f03 99%,
+      transparent
+    );
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    background-position: center center;
+    -webkit-animation: bg-spin 3s linear infinite;
+            animation: bg-spin 3s linear infinite;
+  }
+  @-webkit-keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  .box:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
