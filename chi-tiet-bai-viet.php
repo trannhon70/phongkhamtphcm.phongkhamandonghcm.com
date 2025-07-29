@@ -73,9 +73,9 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                 <div class="article__container">
                     <div class="article__container-left">
                         <div class="article__container-left-div">
-                            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
+                            <!-- <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
                             <img class="article__container-left-img" src="<?php echo $local ?>/images/banner/khuyen_mai.webp" height="auto" width="100%" alt="..."></img>
-                            </a>
+                            </a> -->
                            
                         </div>
 
