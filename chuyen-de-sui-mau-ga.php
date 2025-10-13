@@ -18,7 +18,8 @@ $local = 'https://phongkhamtphcm.phongkhamandonghcm.com';
     <title>Phòng khám chuyên khoa</title>
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
     <link rel="preload" href="css/index.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
-    <link rel="preload" href="css/chuyen-de-sui-mau-ga.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
+    <link rel="preload" href="css/chuyen-de-sui-mau-ga.min.css" as="style"
+        onload='this.onload=null,this.rel="stylesheet"'>
     <noscript>
         <link rel="stylesheet" href="css/index.min.css">
         <link rel="stylesheet" href="css/chuyen-de-sui-mau-ga.min.css">
@@ -94,7 +95,8 @@ $slides = [
     <section class="cardbs">
         <div class="cardbs__body">
             <div class="cardbs__body-left">
-                <img loading="lazy" width="100%" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp" alt="...">
+                <img loading="lazy" width="100%" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp"
+                    alt="...">
             </div>
             <div class="cardbs__body-right">
                 <div class="cardbs__body-right-bs">
@@ -111,21 +113,25 @@ $slides = [
     </section>
     <section class="banner">
         <div class="banner__button">
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">tư vấn với bác sĩ tại đây</a>
+            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">tư
+                vấn với bác sĩ tại đây</a>
         </div>
     </section>
     <section class="sick">
         <div class="sick__container">
             <div class="sick__container-item sick__container-item-active ">Sùi Màu Gà Là gì </div>
-            
+
         </div>
     </section>
     <section class="sick">
         <div class="sick__body ">
             <div class="sick__body-card">
-                <strong>Sùi mào gà,</strong> hay còn gọi là mụn cóc sinh dục, là một bệnh lây truyền qua đường tình dục, do virus HPV gây ra. <br><br>
-                Bệnh thường biểu hiện dưới dạng các nốt mụn cóc nhỏ, tổn thương trên da hoặc niêm mạc của bộ phận sinh dục, hậu môn, và đôi khi là vùng miệng.<br><br>
-                Virus HPV lây nhiễm chủ yếu qua quan hệ tình dục không an toàn, tiếp xúc trực tiếp với dịch tiết từ vết thương hở hoặc sử dụng chung đồ cá nhân với người mắc bệnh.
+                <strong>Sùi mào gà,</strong> hay còn gọi là mụn cóc sinh dục, là một bệnh lây truyền qua đường tình dục,
+                do virus HPV gây ra. <br><br>
+                Bệnh thường biểu hiện dưới dạng các nốt mụn cóc nhỏ, tổn thương trên da hoặc niêm mạc của bộ phận sinh
+                dục, hậu môn, và đôi khi là vùng miệng.<br><br>
+                Virus HPV lây nhiễm chủ yếu qua quan hệ tình dục không an toàn, tiếp xúc trực tiếp với dịch tiết từ vết
+                thương hở hoặc sử dụng chung đồ cá nhân với người mắc bệnh.
             </div>
         </div>
     </section>
@@ -153,22 +159,26 @@ $slides = [
     <section class="complication">
         <div class="complication__body">
             <strong> Biểu hiện:</strong>
-            Nổi các nốt sần, gai thịt mềm tại âm đạo, môi lớn, môi bé, cổ tử cung (nữ); Lỗ sáo, quy đầu, bao quy đầu, thân dương vật (nam); Vùng hậu môn hoặc miệng, họng.
+            Nổi các nốt sần, gai thịt mềm tại âm đạo, môi lớn, môi bé, cổ tử cung (nữ); Lỗ sáo, quy đầu, bao quy đầu,
+            thân dương vật (nam); Vùng hậu môn hoặc miệng, họng.
         </div>
         <div class="complication__img ">
-            <div >
-                <img class="" loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/sui_mau_ga.webp" alt="bác sĩ">
+            <div>
+                <img class="" loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/sui_mau_ga.webp"
+                    alt="bác sĩ">
             </div>
         </div>
     </section>
     <section class="complication">
         <div class="complication__body">
             <strong> Biến chứng:</strong>
-            Ảnh hưởng đến tâm lý, chất lượng cuộc sống và sức khỏe tổng thể. Thậm chí dẫn tới ung thư cổ tử cung (nữ), dương vật (nam), hậu môn hoặc hầu họng.
+            Ảnh hưởng đến tâm lý, chất lượng cuộc sống và sức khỏe tổng thể. Thậm chí dẫn tới ung thư cổ tử cung (nữ),
+            dương vật (nam), hậu môn hoặc hầu họng.
         </div>
         <div class="complication__img ">
             <div class="shock_img">
-                <img class="" loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/sui_mau_ga1.webp" alt="bác sĩ">
+                <img class="" loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/sui_mau_ga1.webp"
+                    alt="bác sĩ">
             </div>
         </div>
     </section>
@@ -185,10 +195,12 @@ $slides = [
                     1. Lây lan nhanh, mạnh, dễ dàng truyền bệnh cho người khác.
                 </div>
                 <div>
-                    2. Các nốt sùi có thể hợp lại với nhau thành khóm lớn và biến chứng gây ung thư cổ tử cung, ung thư âm đạo, ung thư dương vật, ung thư vòm họng v.v….
+                    2. Các nốt sùi có thể hợp lại với nhau thành khóm lớn và biến chứng gây ung thư cổ tử cung, ung thư
+                    âm đạo, ung thư dương vật, ung thư vòm họng v.v….
                 </div>
                 <div>
-                    3. Dễ tái phát bệnh do khả năng miễn dịch suy giảm, quan hệ tình dục không an toàn, điều trị không triệt để.
+                    3. Dễ tái phát bệnh do khả năng miễn dịch suy giảm, quan hệ tình dục không an toàn, điều trị không
+                    triệt để.
                 </div>
             </div>
         </div>
@@ -227,7 +239,8 @@ $slides = [
                 <div class="list_image">
                     <?php foreach ($slides as $slide): ?>
                         <div class="list_image_card">
-                            <img loading="lazy" height="300px" width="300px" src="<?php echo $local . $slide['image']; ?>" alt="<?php echo $slide['alt']; ?>">
+                            <img loading="lazy" height="300px" width="300px" src="<?php echo $local . $slide['image']; ?>"
+                                alt="<?php echo $slide['alt']; ?>">
                             <div class="list_image_card-text">
                                 <div>
                                     <strong><?php echo $slide['symptom']; ?></strong>
@@ -240,8 +253,10 @@ $slides = [
                     <?php endforeach; ?>
                 </div>
                 <div class="btns">
-                    <div class="btn-left btn"><img loading="lazy" width="30px" height="30px" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_prev.webp" alt="..."></div>
-                    <div class="btn-right btn"><img loading="lazy" width="30px" height="30px" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_next.webp" alt="..."></i></div>
+                    <div class="btn-left btn"><img loading="lazy" width="30px" height="30px"
+                            src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_prev.webp" alt="..."></div>
+                    <div class="btn-right btn"><img loading="lazy" width="30px" height="30px"
+                            src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_next.webp" alt="..."></i></div>
                 </div>
 
             </div>
@@ -249,7 +264,8 @@ $slides = [
     </section>
     <section class="banner">
         <div class="banner__button">
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">liên hệ ngay</a>
+            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">liên
+                hệ ngay</a>
         </div>
     </section>
 
@@ -260,8 +276,10 @@ $slides = [
     </section>
     <section class="information">
         <h2 class="information__tile ">CHỮA SÙI MÀO GÀ BAO NHIÊU TIỀN?</h2>
-        <div style="padding: 10px; box-sizing: border-box; text-align: center; font-size: 18px; border: 1px dashed #9b9b9b; ">
-            Đơn giá công khai và minh bạch, giúp bệnh nhân lựa chọn phương pháp phù hợp với tài chính. Ngoài ra, còn có nhiều chương trình ưu đãi hỗ trợ giảm chi phí để người bệnh yên tâm hơn.
+        <div
+            style="padding: 10px; box-sizing: border-box; text-align: center; font-size: 18px; border: 1px dashed #9b9b9b; ">
+            Đơn giá công khai và minh bạch, giúp bệnh nhân lựa chọn phương pháp phù hợp với tài chính. Ngoài ra, còn có
+            nhiều chương trình ưu đãi hỗ trợ giảm chi phí để người bệnh yên tâm hơn.
         </div>
     </section>
     <section class="information">
@@ -271,7 +289,8 @@ $slides = [
     </section>
     <section id="bs" class="banner">
         <div class="banner__button">
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">đặt lịch tại đây</a>
+            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">đặt
+                lịch tại đây</a>
         </div>
     </section>
     <section class="information">
@@ -280,7 +299,8 @@ $slides = [
     <section class="information">
         <div class="information__body">
             <div class="information__body-title">
-                <img width="30px" height="27px" loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bv.webp" alt="...">
+                <img width="30px" height="27px" loading="lazy"
+                    src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bv.webp" alt="...">
                 <div class="information__body-right">
                     <strong>
                         trình độ học vấn
@@ -297,7 +317,8 @@ $slides = [
     <section class="information">
         <div class="information__body">
             <div class="information__body-bottom ">
-                <img width="30px" height="27px" loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bv.webp" alt="...">
+                <img width="30px" height="27px" loading="lazy"
+                    src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bv.webp" alt="...">
                 <div class="information__body-right">
                     <strong>
                         quá trình công tác :
@@ -322,7 +343,8 @@ $slides = [
                         </div>
                         <div>
                             <strong> - CHUYÊN MÔN ĐIỀU TRỊ:</strong>
-                            <span>Bao quy đầu, tiết niệu tuyến, sinh dục tiết niệu, hậu môn trực tràng, thần kinh trung ương và ngoại biên. </span>
+                            <span>Bao quy đầu, tiết niệu tuyến, sinh dục tiết niệu, hậu môn trực tràng, thần kinh trung
+                                ương và ngoại biên. </span>
                         </div>
                     </div>
                 </div>
@@ -339,7 +361,8 @@ $slides = [
         <div class="information__thongtin">
             <div class="information__thongtin-body">
                 <div class="information__thongtin-text">
-                    “Tôi quan niệm rằng bệnh nhân luôn là trung tâm trong mọi quá trình điều trị. Một người bác sĩ giỏi không chỉ biết chữa bệnh, mà còn phải biết lắng nghe và thấu hiểu những tâm tư của bệnh nhân...”
+                    “Tôi quan niệm rằng bệnh nhân luôn là trung tâm trong mọi quá trình điều trị. Một người bác sĩ giỏi
+                    không chỉ biết chữa bệnh, mà còn phải biết lắng nghe và thấu hiểu những tâm tư của bệnh nhân...”
                 </div>
                 <div class="information__thongtin-hr">
                     <span></span>
@@ -372,17 +395,19 @@ $slides = [
                 </a>
             </div>
             <div>
-                <a style="color: white;" aria-label="phone" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                <a style="color: white;" aria-label="phone"
+                    href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
                     <strong>ZALO: </strong> <span>0968 063 109</span>
                 </a>
             </div>
             <div>
-                <a style="color: white;" aria-label="phone" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                <a style="color: white;" aria-label="phone"
+                    href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
                     <strong>CHAT TRỰC TIẾP </strong>
                 </a>
             </div>
             <div>
-                <strong>ĐỊA CHỈ: </strong> <span>360 An Dương Vương, P.4, Q.5, TP.HCM</span>
+                <strong>ĐỊA CHỈ: </strong> <span>360 An Dương Vương, P. Chợ Quán, TP. HCM</span>
             </div>
         </div>
     </section>
@@ -402,8 +427,8 @@ $slides = [
     <div class="footer_list_icon1">
         <div>
             <a class="footer_icon_mess" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
-                <img style="margin-left:3px" src="<?php echo $local ?>/images/icons/icon_message.webp"
-                    height="45px" width="45px" alt="..."></img>
+                <img style="margin-left:3px" src="<?php echo $local ?>/images/icons/icon_message.webp" height="45px"
+                    width="45px" alt="..."></img>
                 <div class="ping"></div>
                 <div class="footer_list_icon_number">10</div>
             </a>
@@ -504,7 +529,7 @@ $slides = [
         handlePing();
     </script>
 
-    
+
     <script>
         function initImageSlider() {
             const listImage = document.querySelector('.list_image');

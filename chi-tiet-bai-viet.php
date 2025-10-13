@@ -12,7 +12,7 @@ $postDetail = $bai_viet->getBaiViet_bySlug($slug);
 
 if (isset($postDetail) && isset($postDetail['name_khoa'])) {
     $getPostDetail = $postDetail;
-}else {
+} else {
     $postTinTuc = $bai_viet->getBaiVietDauTienByBenh($slug);
     if ($postTinTuc) {
         $getPostDetail = $postTinTuc;
@@ -35,8 +35,8 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
             <?php include "layout/sliderLayout.php" ?>
 
             <?php include_once 'layout/sendPhoneLayout.php' ?>
-            <section id="menu_logo_mobile" >
-                <?php include 'layout/menu_logo.php' ?> 
+            <section id="menu_logo_mobile">
+                <?php include 'layout/menu_logo.php' ?>
             </section>
 
             <section class="article" id="article">
@@ -76,70 +76,78 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                             <!-- <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
                             <img class="article__container-left-img" src="<?php echo $local ?>/images/banner/khuyen_mai.webp" height="auto" width="100%" alt="..."></img>
                             </a> -->
-                           
+
                         </div>
 
                     </div>
                     <div class="article__container-right">
-                    <?php if ($getPostDetail !== 'Hiện tại dữ liệu này chưa có bài viết!') { ?>
-                        <div class="article__container-right-title">
-                            <?php echo $getPostDetail['tieu_de'] ?>
-                        </div>
-                        <div class="article__container-right-banner">
-                            <!-- <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
+                        <?php if ($getPostDetail !== 'Hiện tại dữ liệu này chưa có bài viết!') { ?>
+                            <div class="article__container-right-title">
+                                <?php echo $getPostDetail['tieu_de'] ?>
+                            </div>
+                            <div class="article__container-right-banner">
+                                <!-- <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
                                 <img width="100%"  src="<?php echo $local ?>/images/banner/khuyen_mai_mobile.gif" alt="...">
                             </a> -->
-                           <section class="cardbs">
-                                <div class="cardbs__body">
-                                    <div class="cardbs__body-left">
-                                        <img loading="lazy" width="100%" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp" alt="...">
+                                <section class="cardbs">
+                                    <div class="cardbs__body">
+                                        <div class="cardbs__body-left">
+                                            <img loading="lazy" width="100%"
+                                                src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp" alt="...">
+                                        </div>
+                                        <div class="cardbs__body-right">
+                                            <div class="cardbs__body-right-bs">
+                                                BS VÕ MINH NGUYỄN
+                                            </div>
+                                            <div class="cardbs__body-right-ck">
+                                                Chuyên khoa ngoại
+                                            </div>
+                                            <div class="cardbs__body-right-ct">
+                                                Từng công tác tại Bệnh viện Chuyên khoa Sainpaul Hà Nội <a href="#bs">xem
+                                                    thêm...</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="cardbs__body-right">
-                                        <div class="cardbs__body-right-bs">
-                                            BS VÕ MINH NGUYỄN
-                                        </div>
-                                        <div class="cardbs__body-right-ck">
-                                            Chuyên khoa ngoại
-                                        </div>
-                                        <div class="cardbs__body-right-ct">
-                                            Từng công tác tại Bệnh viện Chuyên khoa Sainpaul Hà Nội <a href="#bs">xem thêm...</a>
-                                        </div>
+                                </section>
+                                <section class="banner">
+                                    <div class="banner__button">
+                                        <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+                                            aria-label="title" class="box">tư vấn với bác sĩ tại đây</a>
                                     </div>
-                                </div>
-                            </section>
-                            <section class="banner">
-                                <div class="banner__button">
-                                    <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">tư vấn với bác sĩ tại đây</a>
-                                </div>
-                            </section>
-                        </div>
-                        
-                        <div class="article__container-right-content" id="bai-viet">
-                            <?php if (Session::get('role') === '1' || Session::get('role') === '2') {?>
-                                <a class="chinh-sua"
-                                    href="<?php echo $local ?>/admin/bai-viet-edit.php?edit=<?php echo $getPostDetail['id'] ?>">
-                                    <i style="font-size:19px" class="bx bxs-pencil"></i>chỉnh sửa
-                                </a>
-                            <?php } ?>
-                            <?php echo htmlspecialchars_decode($getPostDetail['content']); ?>
-                        </div>
-                        <div class="bai-viet-footer">Nội dung bài viết cung cấp nhằm mục đích tham khảo thêm kiến thức y tế,
-                            một số nội dung có thể không thuộc nghiệp vụ của phòng khám chúng tôi, Hiệu quả của việc hỗ trợ
-                            điều trị phụ thuộc vào cơ địa của mỗi người. Cần biết thông tin liên hệ để được tư vấn trực
-                            tuyến miễn phí.<a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" >[TƯ VẤN TRỰC TUYẾN]</a>
-                        </div>
+                                </section>
+                            </div>
+
+                            <div class="article__container-right-content">
+                                <?php if (Session::get('role') === '1' || Session::get('role') === '2') { ?>
+                                    <a class="chinh-sua"
+                                        href="<?php echo $local ?>/admin/bai-viet-edit.php?edit=<?php echo $getPostDetail['id'] ?>">
+                                        <i style="font-size:19px" class="bx bxs-pencil"></i>chỉnh sửa
+                                    </a>
+                                <?php } ?>
+                            </div>
+                            <div id="bai-viet">
+
+                            </div>
+                            <div class="bai-viet-footer">Nội dung bài viết cung cấp nhằm mục đích tham khảo thêm kiến thức y
+                                tế,
+                                một số nội dung có thể không thuộc nghiệp vụ của phòng khám chúng tôi, Hiệu quả của việc hỗ
+                                trợ
+                                điều trị phụ thuộc vào cơ địa của mỗi người. Cần biết thông tin liên hệ để được tư vấn trực
+                                tuyến miễn phí.<a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">[TƯ
+                                    VẤN TRỰC TUYẾN]</a>
+                            </div>
                         <?php } ?>
                     </div>
                 </div>
             </section>
 
             <?php include_once 'layout/benefitLayout.php' ?>
-           
+
         </article>
     </main>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
+    <script defer>
+        function applyCSSandJS() {
             //images gây shock
             const shockElements = document.querySelectorAll('.shock_img');
             shockElements.forEach(shockElement => {
@@ -179,10 +187,10 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                     pElements[i].style.lineHeight = '27px';
                 }
 
-                
+
             }
 
-           
+
 
             let imgElements = baiVietElement.getElementsByTagName('img');
             if (imgElements) {
@@ -195,17 +203,18 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                     }
 
                     //hiển thị css img chatbox
-                    if (imgElements[i].src.startsWith('<?php echo $local ?>/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif') ==
-                    // if (imgElements[i].src.startsWith('http://localhost/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif') ==
+                    if (imgElements[i].src.startsWith(
+                            '<?php echo $local ?>/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif') ==
+                        // if (imgElements[i].src.startsWith('http://localhost/ckfinder/userfiles/images/Chat/Chat-Dakhoa.gif') ==
                         true) {
                         imgElements[i].style.borderRadius = '8px';
                         let divWrapper = document.createElement('a');
                         divWrapper.href = "https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en";
-                        
+
                         divWrapper.className = 'glow-on-hover';
                         imgElements[i].parentNode.insertBefore(divWrapper, imgElements[i]);
                         divWrapper.appendChild(imgElements[i])
-                       
+
                     }
                 }
             }
@@ -286,24 +295,33 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                 console.warn("One or more elements were not found in the DOM.");
             }
 
-        })
+        }
     </script>
 
-<script defer>
-    let baiVietElement = document.getElementById('bai-viet');
-    if (baiVietElement) {
-        // Lấy nội dung HTML của phần tử
-        let content = baiVietElement.innerHTML;
+    <script>
+        const bodyPlaceholder = document.getElementById("bai-viet");
+        const loadBody = () => {
+            let content = `<?php echo htmlspecialchars_decode($getPostDetail['content']); ?>`;
+            bodyPlaceholder.innerHTML = content;
+            content = content.replace(/0968\s063\s109/g, '0968 063 109, 028 7777 9888');
+            content = content.replace(/Đa\s+Khoa/gi, 'Chuyên khoa');
+            const addressRegex = /360,\sAn\sDương\sVương,\sP\.4,\sQ\.5,\sTPHCM\./g;
+            content = content.replace(addressRegex, 'Số 360 đường An Dương Vương, Phường Chợ Quán, TP Hồ Chí Minh');
 
-        // Thay số điện thoại
-        content = content.replace(/0968\s063\s109/g, '0968 063 109, 028 7777 9888');
-
-        // Thay "Đa Khoa" bất kể viết hoa/thường
-        content = content.replace(/Đa\s+Khoa/gi, 'Chuyên khoa');
-
-        // Cập nhật lại nội dung của thẻ
-        baiVietElement.innerHTML = content;
-    }
-</script>
+            bodyPlaceholder.innerHTML = content;
+            bodyPlaceholder.classList.add("loaded");
+            observer.unobserve(bodyPlaceholder);
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    loadBody();
+                    applyCSSandJS()
+                }
+            });
+        });
+        // Khởi tạo tải content ban đầu và bắt đầu quan sát bodyPlaceholder
+        observer.observe(bodyPlaceholder);
+    </script>
 
     <?php include_once 'inc/footer.php' ?>
