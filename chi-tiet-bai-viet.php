@@ -317,6 +317,7 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                 if (entry.isIntersecting) {
                     loadBody();
                     applyCSSandJS()
+                    checkImgMobile()
                 }
             });
         });
