@@ -1,13 +1,13 @@
 <style>
     .modal {
         display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 10%;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 10%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
     }
 
     .modal-content {
@@ -19,23 +19,24 @@
     }
 
     @keyframes slidein {
-            from {
-                transform: translateX(150vw) scaleX(2);
-            }
-            to {
-                transform: translateX(0) scaleX(1);
-            }
+        from {
+            transform: translateX(150vw) scaleX(2);
         }
 
-        @keyframes slideout {
-            from {
-                transform: translateX(0) scaleX(1);
-            }
-
-            to {
-                transform: translateX(150vw) scaleX(2);
-            }
+        to {
+            transform: translateX(0) scaleX(1);
         }
+    }
+
+    @keyframes slideout {
+        from {
+            transform: translateX(0) scaleX(1);
+        }
+
+        to {
+            transform: translateX(150vw) scaleX(2);
+        }
+    }
 
 
     .closeKM {
@@ -65,13 +66,13 @@
             height: auto;
             animation-duration: 1s;
             animation-name: slidein;
-         }
-            
-         .closeKM {
+        }
+
+        .closeKM {
             font-size: 20px;
             padding: 0px 5px;
         }
-        }
+    }
 </style>
 
 
@@ -82,9 +83,9 @@
             <span class="closeKM" id="closeModalKM">&times;</span>
             <img width="100%" height="auto" src="<?php echo $local ?>/images/banner/uudai.gif" alt="...">
             <div style="position: absolute; bottom: 0; left: 0; display: flex; align-items: center; height: 40px; width: 100%; ">
-                <div style="width: 23%; height:40px" ></div>
-                <div id="clickSloseModal" style="width: 23%;  height:40px " ></div>
-                <a style="width: 54%;  height:40px; display: block; " href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" ></a>
+                <div style="width: 23%; height:40px"></div>
+                <div id="clickSloseModal" style="width: 23%;  height:40px "></div>
+                <a style="width: 54%;  height:40px; display: block; " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
             </div>
 
         </div>

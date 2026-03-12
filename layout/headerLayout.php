@@ -63,7 +63,7 @@ $DSBenh = $benh->getDSBenhThuocKhoaTTYK();
             </li>
 
             <li class="header__bottom-ul-li1">
-                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                     <div>
                         <amp-img class="header__bottom-logo-img"
                             src="<?php echo $local ?>/images/icons/icon-datlich.webp" height="50px" width="50px"
@@ -130,10 +130,10 @@ $DSBenh = $benh->getDSBenhThuocKhoaTTYK();
                 <a href="<?php echo $local ?>">Tin Tức</a>
             </li>
             <li>
-                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">Tư Vấn Trực Tuyến</a>
+                <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">Tư Vấn Trực Tuyến</a>
             </li>
             <li>
-                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">Đặt Lịch Khám</a>
+                <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">Đặt Lịch Khám</a>
             </li>
         </ul>
     </nav>

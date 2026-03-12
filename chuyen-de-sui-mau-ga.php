@@ -113,7 +113,7 @@ $slides = [
     </section>
     <section class="banner">
         <div class="banner__button">
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">tư
+            <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" aria-label="title" class="box">tư
                 vấn với bác sĩ tại đây</a>
         </div>
     </section>
@@ -136,7 +136,7 @@ $slides = [
         </div>
     </section>
     <section class="treatment">
-        <a aria-label="chat" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="expert__chat">
+        <a aria-label="chat" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="expert__chat">
             <img loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/icons/chat_dakhoa.gif" alt="...">
         </a>
     </section>
@@ -148,7 +148,7 @@ $slides = [
     </section>
     <section class="banner">
         <div class="banner__button">
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">đặt lịch khám ngay</a>
+            <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" aria-label="title" class="box">đặt lịch khám ngay</a>
         </div>
     </section> -->
     <section class="complication">
@@ -183,7 +183,7 @@ $slides = [
         </div>
     </section>
     <section class="treatment">
-        <a aria-label="chat" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="expert__chat">
+        <a aria-label="chat" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="expert__chat">
             <img loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/icons/chat_dakhoa.gif" alt="...">
         </a>
     </section>
@@ -264,7 +264,7 @@ $slides = [
     </section>
     <section class="banner">
         <div class="banner__button">
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">liên
+            <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" aria-label="title" class="box">liên
                 hệ ngay</a>
         </div>
     </section>
@@ -289,7 +289,7 @@ $slides = [
     </section>
     <section id="bs" class="banner">
         <div class="banner__button">
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">đặt
+            <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" aria-label="title" class="box">đặt
                 lịch tại đây</a>
         </div>
     </section>
@@ -396,13 +396,13 @@ $slides = [
             </div>
             <div>
                 <a style="color: white;" aria-label="phone"
-                    href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                    href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                     <strong>ZALO: </strong> <span>0968 063 109</span>
                 </a>
             </div>
             <div>
                 <a style="color: white;" aria-label="phone"
-                    href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                    href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                     <strong>CHAT TRỰC TIẾP </strong>
                 </a>
             </div>
@@ -415,9 +415,9 @@ $slides = [
         <img loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/footer.webp" alt="...">
         <div class="footer__body">
             <div class="footer__body-top">
-                <a aria-label="left" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
-                <a aria-label="center" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
-                <a aria-label="right" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+                <a aria-label="left" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
+                <a aria-label="center" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
+                <a aria-label="right" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
             </div>
             <div class="footer__body-botom">
                 <a aria-label="bottom" href="tel:+0968063109"></a>
@@ -426,7 +426,7 @@ $slides = [
     </div>
     <div class="footer_list_icon1">
         <div>
-            <a class="footer_icon_mess" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+            <a class="footer_icon_mess" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                 <img style="margin-left:3px" src="<?php echo $local ?>/images/icons/icon_message.webp" height="45px"
                     width="45px" alt="..."></img>
                 <div class="ping"></div>

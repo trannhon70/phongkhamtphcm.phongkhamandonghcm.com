@@ -111,7 +111,7 @@ $slides = [
     </header>
     <section class="section__button">
         <a aria-label="liên hệ" class="animated-button"
-            href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+            href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
             <span></span>
             <span></span>
             <span></span>
@@ -222,7 +222,7 @@ $slides = [
                 src="<?php echo $local ?>/images/nam_khoa/banner/bacsi_kham.webp" alt="...">
         </section>
         <section class="treatment">
-            <a aria-label="chat" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+            <a aria-label="chat" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"
                 class="expert__chat">
                 <img loading="lazy" src="<?php echo $local ?>/images/nam_khoa/icons/chat_dakhoa.gif" alt="...">
             </a>
@@ -303,7 +303,7 @@ $slides = [
         </section>
         <section class="expert">
 
-            <a aria-label="chat" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+            <a aria-label="chat" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"
                 class="expert__chat">
                 <img loading="lazy" src="<?php echo $local ?>/images/nam_khoa/icons/chat_dakhoa.gif" alt="...">
             </a>
@@ -319,7 +319,7 @@ $slides = [
     </section> -->
         <section class="section__button">
             <a aria-label="liên hệ" class="animated-button"
-                href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -373,7 +373,7 @@ $slides = [
         </section>
         <section class="section__button">
             <a aria-label="liên hệ" class="animated-button"
-                href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -431,12 +431,12 @@ $slides = [
                     </a>
                 </div>
                 <div>
-                    <a aria-label="phone" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                    <a aria-label="phone" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                         <strong>ZALO: </strong> <span>0968 063 109</span>
                     </a>
                 </div>
                 <div>
-                    <a aria-label="phone" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                    <a aria-label="phone" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                         <strong>CHAT TRỰC TIẾP </strong>
                     </a>
                 </div>
@@ -449,9 +449,9 @@ $slides = [
             <img loading="lazy" src="<?php echo $local ?>/images/nam_khoa/banner/footer.webp" alt="...">
             <div class="footer__body">
                 <div class="footer__body-top">
-                    <a aria-label="left" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
-                    <a aria-label="center" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
-                    <a aria-label="right" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+                    <a aria-label="left" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
+                    <a aria-label="center" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
+                    <a aria-label="right" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
                 </div>
                 <div class="footer__body-botom">
                     <a aria-label="bottom" href="tel:+0968063109"></a>
