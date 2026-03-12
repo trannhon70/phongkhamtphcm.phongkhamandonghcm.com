@@ -94,14 +94,14 @@
 
 <script>
     const modal = document.getElementById("myModalKM");
-    const btn = document.getElementById("openModalKM");
+    // const btn = document.getElementById("openModalKM");
     const span = document.getElementById("closeModalKM");
     const sloseModal = document.getElementById("clickSloseModal");
 
     // Khi người dùng nhấp vào nút, mở modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
+    // btn.onclick = function() {
+    //     modal.style.display = "block";
+    // }
 
     sloseModal.onclick = function() {
         modal.style.display = "none";
