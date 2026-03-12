@@ -192,7 +192,7 @@
     </div>
     <div class="footer__mobile-position">
         <div class="footer__mobile-position-div">
-            <a class="footer__mobile-position-div-left" href="tel:02877779888">
+            <a class="footer__mobile-position-div-left" href="tel:0968063109">
                 <div style="position: relative;">
                     <div class="footer_list_icon_number1">10</div>
                 </div>
